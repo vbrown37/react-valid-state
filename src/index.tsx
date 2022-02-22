@@ -13,14 +13,11 @@ export function useValidState<T extends unknown>(initialValue: T, ...validators:
     const setValidState = (value: T) => {
         setIsValid(true)
         validators.forEach((validator: StateValidatorExecutor) => {
-            if (!validator.isValid(value)) {
-                setIsValid(false);
-            }
+            setIsValid(validator.isValid(value));
         })
         setState(value);
     }
 
     return [state, setValidState, isValid]
 }
-
 
