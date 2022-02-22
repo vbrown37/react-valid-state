@@ -1,6 +1,6 @@
 {
-  "name": "@axzial/react-valid-state",
-  "version": "1.0.0",
+  "name": "react-valid-state",
+  "version": "1.0.1",
   "description": "",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
