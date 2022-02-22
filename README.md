@@ -24,12 +24,12 @@ yarn add react-valid-state --save
 const Test = () => {
 
     // Value must be between 3 and 5
-    const [value, setValue, isValueError]
+    const [value, setValue, isValueValid]
         = useValidState<number>(1, StateValidator.min(3), StateValidator.max(5));
 
     return (
         <div>
-            {isValueError && <h1>Value has an error !</h1>}
+            {isValueValid && <h1>Value has been validated !</h1>}
         </div>
     );
 };
@@ -43,3 +43,5 @@ const Test = () => {
 const [value, setValue, isValueError, violations]
     = useValidState<number>(1, StateValidator.max(5), StateValidator.min(1));
 ```
+
+- Add validation custom trigger
