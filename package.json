@@ -1,10 +1,24 @@
 {
   "name": "react-valid-state",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Axzial/react-valid-state"
+  },
+  "bugs": {
+    "url": "https://github.com/Axzial/react-valid-state/issues"
+  },
+  "homepage": "https://github.com/Axzial/react-valid-state#readme",
+  "keywords": [
+    "react",
+    "state",
+    "validation",
+    "hook"
+  ],
   "scripts": {
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
@@ -20,9 +34,8 @@
     ".npmignore",
     "tsconfig.json"
   ],
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Axzial <axzial@protonmail.com>",
+  "license": "MIT",
   "dependencies": {
     "file-loader": "^6.2.0",
     "react": "^17.0.2",
